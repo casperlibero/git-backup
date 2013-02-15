@@ -1,7 +1,12 @@
 #!/bin/bash
 
-mkdir -b bitbucket
+mkdir -p bitbucket
 mkdir -p github
+
+if [ ! "$(which pip)" ]
+then
+  echo "you need install python pip"
+fi
 
 if [[ "$(whoami)" == "root" ]] 
 then
