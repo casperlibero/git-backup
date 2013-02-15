@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mkdir -b bitbucket
+mkdir -p github
+
 if [[ "$(whoami)" == "root" ]] 
 then
   pip install -r requirements.txt
