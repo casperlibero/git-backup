@@ -1,2 +1,4 @@
+jsonpath
+oauth2
 requests
 git+git://github.com/gitpython-developers/GitPython.git
