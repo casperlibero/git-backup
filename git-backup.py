@@ -15,8 +15,7 @@ def extract(search, uri):
   if len(uri) > len(search):
     logger.debug("URI '%s' will be parted by '%s'" % (uri, search))
     base = uri.rpartition(search)
-    url = "git@bitbucket.org:%s" % base[len(base) - 1]
-    return url
+    return "git@bitbucket.org:%s" % base[len(base) - 1]
   else:
     logger.error("Zero length URI!")
     return ''
